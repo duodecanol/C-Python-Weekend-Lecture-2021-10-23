@@ -27,5 +27,8 @@
     <ClCompile Include="test_04.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="print number as binary.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
