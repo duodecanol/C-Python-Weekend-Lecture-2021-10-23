@@ -11,5 +11,5 @@ int test_01() {
 	printf("%5.3f\n", 6375.0);
 	printf("%.3f\n", bb);
 	printf("Radix friends %d  %x  %o  %#x  %#o\n", 128, 128, 128, 128, 128);
-	return 0;
+	return 0;	
 }

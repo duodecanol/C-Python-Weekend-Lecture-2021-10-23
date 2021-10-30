@@ -84,22 +84,41 @@ int test_16() {
 
 	char subway[80]; // delcare an array size of 80 * 1 byte
 	
-	printf("역 이름을 입력하세요 (기본): ");
+	printf("역 이름을 입력하세요 (기본):	");
 	scanf_s("%s", subway, 50); // arg3 => array size 80이지만 이번 입력에서는 50까지만 사용하겠다.
 	// string scan시에는 &를 붙이지 않는다. (포인터 개념)
 	// 데이터 입력시에 공백이 들어오면 거기서 입력이 종료된다.
 	printf("이번에 정차할 역은 %s역입니다.\n", subway);	
 
-	printf("역 이름을 입력하세요 (공백이 아니라 개행문자로 scan 종료): ");
+	// *+*+*+*+*+ Input buffer clear workaround 1 *+*+*+*+*+*+
+	//fflush(stdin);
+	// *+*+*+*+*+ Input buffer clear workaround 2 *+*+*+*+*+*+
+	fseek(stdin, 0, SEEK_END);
+	// *+*+*+*+*+ Input buffer clear workaround 3 *+*+*+*+*+*+
+	//int c;
+	//while ((c = getchar()) != '\n' && c != EOF) {}
+
+	printf("역 이름을 입력하세요 (공백이 아니라 개행문자로 scan 종료):");
 	scanf_s("%[^\n]s", subway, 50); // arg3 => array size 80이지만 이번 입력에서는 50까지만 사용하겠다.
-	// 공백으로 인한 스캔 종료를 막기 위해 %s 에 [^\n]을 추가:    Windows라그런지 안끝난다. \r\n인지?
+	// 공백으로 인한 스캔 종료를 막기 위해 %s 에 [^\n]을 추가:    
+	// Windows라그런지 안끝난다. \r\n인지? 
+	//       ===> 위에서 한번 입력받고 엔터를 눌렀기때문. [^\n\n] 두개해주면됨.
+	//       ===> 콘솔에서 입력한 입출력 stream이 모두 인식된다.
 	// Regex [^\n] = character that is NOT a line break '\n'
 	printf("이번에 정차할 역은 %s역입니다.\n", subway);
 
-	printf("역 이름을 입력하세요 (특정 문자로 종료하기 @): ");
-	scanf_s("%[^\@]s", subway, 50); // arg3 => array size 80이지만 이번 입력에서는 50까지만 사용하겠다.
+	printf("역 이름을 입력하세요 (특정 문자로 종료하기 @):");
+	scanf_s("%[^@]s", subway, 50); // arg3 => array size 80이지만 이번 입력에서는 50까지만 사용하겠다.
 	// 이번에는 @를 넣어본다.
 	printf("이번에 정차할 역은 %s역입니다.\n", subway);
+
+	printf("역 이름을 입력하세요 (Alternative 함수 => gets() 함수): ");
+	gets_s(subway, 50); // arg3 => array size 80이지만 이번 입력에서는 50까지만 사용하겠다.
+	// 공백으로 인한 스캔 종료를 막기 위해 %s 에 [^\n]을 추가:    
+	// Windows라그런지 안끝난다. \r\n인지? 
+	//       ===> 위에서 한번 입력받고 엔터를 눌렀기때문. [^\n\n] 두개해주면됨.
+	// Regex [^\n] = character that is NOT a line break '\n'
+	printf("이번에 정차할 역은 %s역입니다.\n ", subway);
 
 	return 0;
 }

@@ -2,5 +2,9 @@
 #include <stdio.h>
 
 void main() {
-	test_18();
+	//test_16();
+	//intertypes_operations_print();
+	//types_investigation();
+	typecast();
+	test_22();
 }
