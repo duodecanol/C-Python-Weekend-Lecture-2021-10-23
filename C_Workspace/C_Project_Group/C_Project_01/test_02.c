@@ -13,7 +13,7 @@
   (byte & 0x01 ? '1' : '0') 
 
 
-void main() {
+void test_02() {
 	printf("%x\n", 129 >> 8);
 	printf("Radix friends %d  %x  %o  %#x  %#o\n", 128, 128, 128, 128, 128);
 	printf("10\n");

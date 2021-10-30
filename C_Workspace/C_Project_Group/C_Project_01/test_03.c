@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-void main() {
+void test_03() {
 	printf("100+200");
 	printf("\n");
 	printf("%d", 100 + 200);

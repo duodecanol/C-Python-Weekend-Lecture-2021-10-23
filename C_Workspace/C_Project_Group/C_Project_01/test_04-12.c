@@ -1,15 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-void main() {
-	//test_04();
-	//test_05();
-	//test_07();
-	//test_08();
-	//test_09();
-	//test_10();
-	test_11();
-	test_12();
+void go_test() {
 
 }
 
@@ -21,6 +13,12 @@ int test_04() {
 	return 0;
 }
 
+
+int multiply(int a, int b) {
+	printf("%d * %d = %d\n", a, b, a * b);
+	return 0;
+}
+
 int test_05() {
 	printf("4 * 5 = %d\n", 4 * 5);
 	printf("7 * 9 = %d\n", 7 * 9);
@@ -28,10 +26,6 @@ int test_05() {
 	return 0;
 }
 
-int multiply(int a, int b) {
-	printf("%d * %d = %d\n", a, b, a * b);
-	return 0;
-}
 
 int test_07() {
 	int height;
@@ -111,7 +105,7 @@ int test_11() {
 int test_12() {
 	// assign CHAR
 	char ch = 'A';
-	const xx = "ㄴㄸㅆ";  /// const의 자료형은 어떻게 결정되는가????
+	const char *xx = "ㄴㄸㅆ";  /// const의 자료형은 어떻게 결정되는가????
 	
 	printf("ch:%c\n", ch);
 	printf("literal int size: %d byte (8 bit)\n", sizeof(7));

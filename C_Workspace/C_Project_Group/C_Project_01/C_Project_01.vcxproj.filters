@@ -24,10 +24,16 @@
     <ClCompile Include="test_03.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="test_04.c">
+    <ClCompile Include="print number as binary.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="print number as binary.c">
+    <ClCompile Include="test_04-12.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="test_13.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

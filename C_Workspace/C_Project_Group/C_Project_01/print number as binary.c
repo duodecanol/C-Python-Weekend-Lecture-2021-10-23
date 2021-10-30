@@ -1,3 +1,6 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
 #define BINARY_PATTERN_INT8 "%c%c%c%c_%c%c%c%c"
 #define BYTE_TO_BINARY_INT8(i) \
   (((i) & 0x80ll) ? '1' : '0'), \
@@ -27,19 +30,7 @@
 #define BYTE_TO_BINARY_INT64(i) \
 	BYTE_TO_BINARY_INT32((i) >> 8), BYTE_TO_BINARY_INT32(i)
 
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
 
-#define BYTE_TO_BINARY_PATTERN "%c%c%c%c_%c%c%c%c"
-#define BINARY_OCT_CHUNK(byte)  \
-  (byte & 0x80 ? '1' : '0'), \
-  (byte & 0x40 ? '1' : '0'), \
-  (byte & 0x20 ? '1' : '0'), \
-  (byte & 0x10 ? '1' : '0'), \
-  (byte & 0x08 ? '1' : '0'), \
-  (byte & 0x04 ? '1' : '0'), \
-  (byte & 0x02 ? '1' : '0'), \
-  (byte & 0x01 ? '1' : '0')
 
 //#define EMP {'0','0','0','0','0','0','0','0', '\0'};
 //

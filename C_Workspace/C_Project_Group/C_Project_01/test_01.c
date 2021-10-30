@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main() {
+int test_01() {
 	printf("Hello, World!\n");
 
 	int aa = 200;
