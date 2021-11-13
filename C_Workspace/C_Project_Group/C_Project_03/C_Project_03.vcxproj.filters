@@ -15,10 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="t001_begin.c">
+    <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="main.c">
+    <ClCompile Include="t005_conditional_branches.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t001_logical_operators.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

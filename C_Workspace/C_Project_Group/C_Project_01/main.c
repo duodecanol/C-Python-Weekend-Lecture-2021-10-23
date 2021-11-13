@@ -10,6 +10,7 @@ void main() {
 	int aa = 11;
 	printf("%d", sizeof(aa));
 	//binprint(780); 
-	//binprint(9990);
+	binprint();
+	
 
 }
