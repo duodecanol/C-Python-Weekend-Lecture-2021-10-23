@@ -16,6 +16,12 @@ int main()
     std::bitset<16> y(c);
     std::cout << y << '\n';
 
+    int i = 262144;
+    std::cout << std::bitset<32>(i) << '\n';
+
+    unsigned long l = 144305621342342;
+    std::cout << std::bitset<64>(l) << '\n';
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

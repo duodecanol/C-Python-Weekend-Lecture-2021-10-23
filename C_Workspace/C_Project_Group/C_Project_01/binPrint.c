@@ -36,7 +36,7 @@ void binprint() {
 	short int si = 1024;
 	int ii = 4096;
 	long li = 8192;
-	long long llli = 16384;
+	unsigned long long llli = 16384;
 	
 	printf("char: "BINARY_PATTERN_INT8"\n", BYTE_TO_BINARY_INT8(ch));
 	printf("sint: "BINARY_PATTERN_INT16"\n", BYTE_TO_BINARY_INT16(si));
