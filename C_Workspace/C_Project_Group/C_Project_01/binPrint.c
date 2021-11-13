@@ -40,30 +40,30 @@
 //	((num >> 8) > 0 ? BINARY_OCT_CHUNK(num	 >> 8) : EMP), \
 //	((num ) > 0 ? BINARY_OCT_CHUNK(num) : EMP)
 
-void main() {
+//void main() {
+//
+//	binprint(8);
+//	binprint(780); binprint(9990);
+//	binprint(76313);
+//	//char aaa[] = { '0','0','0','0','0','0','0','0', '\0' };
+//	//printf("%s", aaa);
+//	//printf("------------- %s", BBBB(128));
+//	//printf("wowowowowow  "BYTE_TO_BINARY_PATTERN"  "BYTE_TO_BINARY_PATTERN, BBBB(128));
+//	//printf("%d\n", AAAA(256));
+//	//printf("%d", AAAA(520));
+//}
 
-	binprint(8);
-	binprint(780); binprint(9990);
-	binprint(76313);
-	//char aaa[] = { '0','0','0','0','0','0','0','0', '\0' };
-	//printf("%s", aaa);
-	//printf("------------- %s", BBBB(128));
-	//printf("wowowowowow  "BYTE_TO_BINARY_PATTERN"  "BYTE_TO_BINARY_PATTERN, BBBB(128));
-	//printf("%d\n", AAAA(256));
-	//printf("%d", AAAA(520));
-}
 
-
-int binprint(int num) {
-	int front, back;
-	front = num >> 8;
-	if (front > 0) {
-		back = num - (front << 8);
-		printf(" "BYTE_TO_BINARY_PATTERN, BINARY_OCT_CHUNK(front));
-		binprint(back);
-	}
-	if (front == 0) {
-		printf(" "BYTE_TO_BINARY_PATTERN"\n", BINARY_OCT_CHUNK(num));
-		return 0;
-	}
-}
+//int binprint(int num) {
+//	int front, back;
+//	front = num >> 8;
+//	if (front > 0) {
+//		back = num - (front << 8);
+//		printf(" "BYTE_TO_BINARY_PATTERN"\n", BINARY_OCT_CHUNK(front));
+//		binprint(back);
+//	}
+//	if (front == 0) {
+//		printf(" "BYTE_TO_BINARY_PATTERN"\n", BINARY_OCT_CHUNK(num));
+//		return 0;
+//	}
+//}

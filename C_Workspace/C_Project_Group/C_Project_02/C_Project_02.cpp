@@ -1,21 +1,11 @@
-// CustomBinaryPrint.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// C_Project_02.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
-#include <bitset>
 
 int main()
 {
     std::cout << "Hello World!\n";
-
-    char a = -58;
-    std::bitset<8> x(a);
-    std::cout << x << '\n';
-
-    short c = -315;
-    std::bitset<16> y(c);
-    std::cout << y << '\n';
-
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

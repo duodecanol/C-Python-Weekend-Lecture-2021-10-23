@@ -15,28 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test_01.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="test_02.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="test_03.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="print number as binary.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="test_04-12.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="test_13.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="main.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="intertypes_operations_test.c">
+    <ClCompile Include="binPrint.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="t001_printf_tutorial.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="t002_number_print_various_radix.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="t004_various_scanf_examples.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="t003_simple_scanf_examples.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="t013_various_scanf_examples.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="t022_intertypes_operations_test.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

@@ -133,7 +133,7 @@ int test_23() {
 
 	printf("돈을 입력하세요: ");
 	scanf_s("%d", &input);
-	//
+	change = input;
 
 	w500 = change / 500;
 	change = change % 500;

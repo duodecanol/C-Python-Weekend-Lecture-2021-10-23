@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 void go_test() {
-
+	// function does nothing
 }
 
 int test_04() {
