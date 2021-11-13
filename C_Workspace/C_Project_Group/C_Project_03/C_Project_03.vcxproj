@@ -88,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,7 +142,9 @@
   <ItemGroup>
     <ClCompile Include="main.c" />
     <ClCompile Include="t001_logical_operators.c" />
-    <ClCompile Include="t005_conditional_branches.c" />
+    <ClCompile Include="t005_conditional_statements.c" />
+    <ClCompile Include="t010_ternary.c" />
+    <ClCompile Include="t011_conditional_statements2.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

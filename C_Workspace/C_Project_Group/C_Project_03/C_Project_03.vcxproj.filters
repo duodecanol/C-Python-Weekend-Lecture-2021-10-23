@@ -18,10 +18,16 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="t005_conditional_branches.c">
+    <ClCompile Include="t001_logical_operators.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="t001_logical_operators.c">
+    <ClCompile Include="t005_conditional_statements.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t010_ternary.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t011_conditional_statements2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

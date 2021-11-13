@@ -1,6 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-
 void test05() {
 
 	if (63 / 9 > 4) {
@@ -49,18 +46,18 @@ void test08() {
 	if (num == 0)
 		printf("The Input value is zero\n");
 	puts("\n\n");
-	puts("                            This is the end of the program.");
+	puts("                            This is the end of the program.\n");
 }
 
 void test09() {
 	int nInput = 0;
-
+	printf("Input an integer: ");
 	scanf_s("%d", &nInput);
 
 	if (nInput >= 10) {
-
+		puts("Greater than or eaqual to 10");
 	}
 	else {
-
+		puts("Less than 10");
 	}
 }
