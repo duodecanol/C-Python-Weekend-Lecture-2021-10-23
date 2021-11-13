@@ -16,6 +16,6 @@ int test07() {
 	printf("Input your height: ");
 	scanf_s(" %lf", &height);
 
-	printf("Name: %s, Sex: %c, Age: %d, Height: %.1lf\n", name, sex, age, height);
+	printf("Name: %s, Sex: %c, Age: %d, Height: %.1lf\n\a", name, sex, age, height);
 	return 1;
 }
