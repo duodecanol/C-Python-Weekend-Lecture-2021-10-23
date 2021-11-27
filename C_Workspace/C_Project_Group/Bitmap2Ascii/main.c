@@ -33,7 +33,7 @@ int main() {
 	(2바이트 크기의 'BM'을 리틀 엔디언 방식으로 읽었으므로 'B'와 'M'이 뒤집혀서 'MB'가 됩니다). 
 	만약 이 값이 맞지 않으면 비트맵 파일이 아닙니다.
 	*/
-	fpBmp = fopen("C:\\Users\\C weekend\\Pictures\\pimang.bmp", "rb"); // Open bitmap file with read-only binary mode
+	fpBmp = fopen("C:\\Users\\hwal\\Pictures\\nekonohi-01a.bmp", "rb"); // Open bitmap file with read-only binary mode
 	if (fpBmp == NULL) {// If file opening fails,
 		puts("Failed to open file");
 		return 0;	   // Exit program
@@ -147,10 +147,10 @@ int main() {
 			// 보통 ASCII 문자는 세로로 길쭉한 형태이므로 정사각형 모양과 비슷하게 보여주기 위해
 			// 같은 문자를 두 번 저장해줌
 			fprintf(fpTxt, "%c%c", c, c);    // 텍스트 파일에 문자 출력
-			//printf(fpTxt, "%c%c", c, c); // 문자 꺠져서 나옴
+			printf("%c%c", c, c); // 문자 꺠져서 나옴
 		}
 		fprintf(fpTxt, "\n");    // 가로 픽셀 저장이 끝났으면 줄바꿈을 해줌
-		//printf(fpTxt, "\n");
+		printf("\n");
 	}
 	fclose(fpTxt);    // 텍스트 파일 닫기
 
