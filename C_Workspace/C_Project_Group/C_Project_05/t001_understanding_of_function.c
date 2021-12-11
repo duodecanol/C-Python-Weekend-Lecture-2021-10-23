@@ -11,7 +11,7 @@
 * 5. {} 몸체 (body)
 * 6. 함수는 호출되기 전에 정의되어 있어야 하고, 호출되어야 작동한다.
 * 7 . 다른 함수가 먼저 있어도 프로그램은 항상 main() 함수부터 시작된다. [ Entry Point ]
-* 
+*
 */
 
 /// <summary>
@@ -43,5 +43,20 @@ int total(int kor, int eng, int mat) {
 double average(int tot) {
 	double avg;
 	avg = tot / 3.0;
+	//printf("%.1lf\n", avg);
 	return avg;
+}
+
+int test03() {
+	int kor, eng, mat;
+	int tot;
+	double avg;
+
+	printf("세 과목의 점수를 입력하세요 : ");
+	scanf_s("%d %d %d", &kor, &eng, &mat);
+	tot = total(kor, eng, mat);
+	avg = average(tot);
+	printf("총점: %d, 평균: %.1lf\n", tot, avg);
+
+	return 0;
 }
