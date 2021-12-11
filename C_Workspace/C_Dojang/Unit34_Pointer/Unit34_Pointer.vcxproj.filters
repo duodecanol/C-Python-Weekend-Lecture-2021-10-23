@@ -27,5 +27,23 @@
     <ClCompile Include="u3403_peek_into_point_in_debbuger.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="u3404_pointers_of_various_data_types.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="u3405_void_pointer_declaration.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="u3406_double_pointer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="u3409_quiz_using_pointers_and_address_operators.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="u3410_drill.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="u5802_type_conversion_pointer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

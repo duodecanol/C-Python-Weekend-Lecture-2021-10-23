@@ -116,6 +116,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -143,6 +144,12 @@
     <ClCompile Include="u3401_pointer_declaration.c" />
     <ClCompile Include="u3402_dereferencing.c" />
     <ClCompile Include="u3403_peek_into_point_in_debbuger.c" />
+    <ClCompile Include="u3404_pointers_of_various_data_types.c" />
+    <ClCompile Include="u3405_void_pointer_declaration.c" />
+    <ClCompile Include="u3406_double_pointer.c" />
+    <ClCompile Include="u3409_quiz_using_pointers_and_address_operators.c" />
+    <ClCompile Include="u3410_drill.c" />
+    <ClCompile Include="u5802_type_conversion_pointer.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
