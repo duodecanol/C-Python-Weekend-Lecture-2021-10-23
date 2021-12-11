@@ -1,7 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
-#define SIZE 20
+
+#define SIZE 20 // for printCustomMultiplicationTable()
 
 int test12() {
 	int n = 45;
@@ -269,17 +270,70 @@ int test23() {
 }
 
 int test24() {
+	/* for문 안에서 if / else if / else를 통해 동작을 제어한다.
+	* 0~20의 숫자를 looping하면서, 2 또는 3의 배수는 출력하지 않고 나머지 수만 출력한다.
+	*
+	*/
 	int num;
+
+	// ######################################################
 	printf("Start!!\n              ");
 
+	// 조건 매칭에서 pass하고 else에서 출력동작
 	for (num = 0; num < 20; num++) {
 		// 2의 배수, 3의 배수 제외
+		// A or B
 		if (num % 2 == 0 || num % 3 == 0) {
 			// TODO do nothing
 		}
 		else {
 			printf("%d ", num);
-		}			
+		}
 	}
 	printf("\nEnd!\n");
+	// ######################################################
+	printf("Start!!\n              ");
+
+	// 조건 매칭 continue 하고 나머지는 출력동작
+	for (num = 0; num < 20; num++) {
+		// 2의 배수, 3의 배수 제외
+		if (num % 2 == 0 || num % 3 == 0) {
+			continue;
+		}
+		printf("%d ", num);
+	}
+	printf("\nEnd!\n");
+	// ######################################################
+	printf("Start!!\n              ");
+
+	for (num = 0; num < 20; num++) {
+		// 2의 배수 또는 3의 배수 제외라는 조건의 부정
+		// ~( A or B ) = ~A and ~B
+		if (!( num % 2 == 0 || num % 3 == 0 )) {
+			// 
+			printf("%d ", num);
+			// TODO do nothing
+		}
+		else {
+
+		}
+	}
+	printf("\nEnd!\n");
+	// ######################################################
+	printf("Start!!\n              ");
+
+	for (num = 0; num < 20; num++) {
+		// 2의 배수 또는 3의 배수 제외라는 조건의 부정
+		// ~A and ~B = ~( A or B )
+		if (!( num % 2 == 0 ) && !( num % 3 == 0 )) {
+			// 
+			printf("%d ", num);
+			// TODO do nothing
+		}
+		else {
+
+		}
+	}
+	printf("\nEnd!\n");
+	// ######################################################
 }
