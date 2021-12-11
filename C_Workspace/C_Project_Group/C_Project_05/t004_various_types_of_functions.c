@@ -45,8 +45,8 @@ void HowToUseThisProg(void) {
 
 int test04() {
 	int a, b, added;
-	HowToUseThisProg();
 
+	HowToUseThisProg();
 	a = ReadNum();
 	b = ReadNum();
 	added = Add(a, b);

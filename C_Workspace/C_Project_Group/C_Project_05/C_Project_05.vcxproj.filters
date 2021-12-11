@@ -24,5 +24,8 @@
     <ClCompile Include="t004_various_types_of_functions.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="t005_basic_array.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

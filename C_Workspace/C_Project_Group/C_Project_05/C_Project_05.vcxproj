@@ -142,6 +142,7 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="t001_understanding_of_function.c" />
     <ClCompile Include="t004_various_types_of_functions.c" />
+    <ClCompile Include="t005_basic_array.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
