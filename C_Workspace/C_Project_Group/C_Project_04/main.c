@@ -24,9 +24,10 @@ void main() {
 	//test22(); // 그리기 Max -> Avg -> Max
 
 	//ex7_5_2(); // 2, 5, 8단
-	printCustomMultiplicationTable();
+	//printCustomMultiplicationTable(); // userInput에 따라 구구단 출력
 	
-	test23();
+	//test23();
+	test24();
 	
 
 }

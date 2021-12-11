@@ -267,3 +267,19 @@ int test23() {
 	printf("그 동안 누적된 값: %d\n", sum);
 	return 0;
 }
+
+int test24() {
+	int num;
+	printf("Start!!\n              ");
+
+	for (num = 0; num < 20; num++) {
+		// 2의 배수, 3의 배수 제외
+		if (num % 2 == 0 || num % 3 == 0) {
+			// TODO do nothing
+		}
+		else {
+			printf("%d ", num);
+		}			
+	}
+	printf("\nEnd!\n");
+}
