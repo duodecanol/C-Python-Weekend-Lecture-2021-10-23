@@ -7,5 +7,7 @@ int main() {
 	printf("µ¡¼À °á°ú 1 : %d\n", result);
 	result = add(5, 8);
 	printf("µ¡¼À °á°ú 2 : %d\n", result);
+
+	
 }
 

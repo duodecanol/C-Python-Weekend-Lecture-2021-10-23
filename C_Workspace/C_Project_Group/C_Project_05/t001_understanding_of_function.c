@@ -21,11 +21,27 @@
 /// <param name="b">int</param>
 /// <returns>(int) a + b</returns>
 int add(int a, int b) {
-	return a + b;
+
+	int result = 0;
+	result = a + b;
+	printf("%d\n", result);
+	return result;
 	/*
 	* return 값이 있을 경우에는 함수를 호출한 곳으로 값을 반환하고 종료
 	* 함수가 종료되면 메모리에서 사라진다. (unload)
 	* return 없을 경우에는 함수 종료를 의미한다.
 	* 매개변수는 외부로부터 값을 전달받는다.
 	*/
+}
+
+int total(int kor, int eng, int mat) {
+	int tot;
+	tot = kor + eng + mat;
+	return tot;
+}
+
+double average(int tot) {
+	double avg;
+	avg = tot / 3.0;
+	return avg;
 }
