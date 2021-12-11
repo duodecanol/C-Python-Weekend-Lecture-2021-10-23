@@ -142,6 +142,7 @@
     <ClCompile Include="main.c" />
     <ClCompile Include="u3401_pointer_declaration.c" />
     <ClCompile Include="u3402_dereferencing.c" />
+    <ClCompile Include="u3403_peek_into_point_in_debbuger.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

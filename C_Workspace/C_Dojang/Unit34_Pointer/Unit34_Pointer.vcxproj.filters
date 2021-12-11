@@ -24,5 +24,8 @@
     <ClCompile Include="u3402_dereferencing.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="u3403_peek_into_point_in_debbuger.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

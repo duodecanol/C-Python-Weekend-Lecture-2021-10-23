@@ -4,8 +4,8 @@
 int main() {
 	//pointerDeclar();
 	//test3401();
-	test3402();
+	//test3402();
+	dereferenceAssign();
 
-	referenceWarning();
-
+	return 0;
 }
