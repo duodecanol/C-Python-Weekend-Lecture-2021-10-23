@@ -27,5 +27,8 @@
     <ClCompile Include="t005_basic_array.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="t010_advanced_array.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

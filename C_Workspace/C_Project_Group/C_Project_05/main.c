@@ -21,6 +21,14 @@ int main() {
 	//test09();z
 	dynamicArray();
 
+	//test10();
+	//test11();
+	//test12();	
+	//test13();
+	test14();
+	test15();
+	test16();
+
 
 	printf("\n");
 	return 0;
