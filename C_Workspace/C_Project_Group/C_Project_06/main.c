@@ -9,12 +9,21 @@ void main(void) {
 	//test04();
 
 	// 2022-01-08
-	test05();
-	test06();
-	test07();
-	test08();
-	test08_long();
-	ex11_1();
-	test10();
-	test11();
+	//test05();
+	//test06();
+	//test07();
+
+	// array and pointer
+	//test08();
+	//test08_long();
+	//ex11_1();
+	//test10();
+	//test11();
+	//test12();
+	//test13();
+	//test14();
+	//test15();
+
+	// strings and pointer
+	test16();
 }

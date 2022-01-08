@@ -32,5 +32,8 @@
     <ClCompile Include="t008_array_and_pointer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="t016_strings_and_pointer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
