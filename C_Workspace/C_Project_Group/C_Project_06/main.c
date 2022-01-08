@@ -15,4 +15,6 @@ void main(void) {
 	test08();
 	test08_long();
 	ex11_1();
+	test10();
+	test11();
 }
