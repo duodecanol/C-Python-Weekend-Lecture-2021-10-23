@@ -26,4 +26,7 @@ void main(void) {
 
 	// strings and pointer
 	test16();
+	test17();
+	test18();
+	test19();
 }
