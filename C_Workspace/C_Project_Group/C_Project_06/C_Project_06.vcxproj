@@ -142,8 +142,13 @@
     <ClInclude Include="projectheader.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.c" />
-    <ClCompile Include="t001_introducing_pointers.c" />
+    <ClCompile Include="main.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="t001_introducing_pointers.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="t005_assigning_values_by_func_ref.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

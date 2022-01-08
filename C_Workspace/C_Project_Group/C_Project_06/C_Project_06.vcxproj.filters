@@ -26,5 +26,8 @@
     <ClCompile Include="t001_introducing_pointers.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="t005_assigning_values_by_func_ref.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

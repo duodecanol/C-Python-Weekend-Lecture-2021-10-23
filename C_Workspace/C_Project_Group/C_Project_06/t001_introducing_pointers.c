@@ -67,6 +67,7 @@ int test03() {
 
 }
 
+
 int test04() {
 	/*
 	char array가 아닌, char pointer에 String을 초기화시키고
