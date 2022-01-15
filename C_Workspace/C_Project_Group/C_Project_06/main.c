@@ -39,5 +39,6 @@ void main(void) {
 	//test25();
 	//test26(); // 소설쓰기
 	//test27();
-	test28();
+	//test28();
+	test29();
 }

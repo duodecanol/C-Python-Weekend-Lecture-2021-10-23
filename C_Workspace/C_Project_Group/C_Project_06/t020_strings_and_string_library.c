@@ -261,6 +261,54 @@ int test28() {
 	return 0;
 }
 
+int test29() {
+	puts("=============");
+	/* 키보드에서 입력되는 데이터는 일단 버퍼에 저장되고
+	* getchar 함수는 버퍼로부터 데이터를 가져오므로, 
+	* 문자열은 한번에 입력된다.
+	*/
+	char str[100] = { 0, };
+	char ch;
+	int i = 0;
 
+	printf("문자열을 입력하세요 (종료는 Ctrl+Z): ");
+	while (1) {
+		ch = getchar();
+		// https://docs.microsoft.com/ko-kr/windows/console/ctrl-c-and-ctrl-break-signals
+		// EOF
+		if (ch == EOF)  // Ctrl + Z ==> EOF(-1)
+			break;
+		str[i] = ch;
+		i++;
+	}
+	str[i] = '\0';
 
+	printf("입 력 된   문 자 열: ");
+	puts(str);
+
+	return 0;
+}
+
+int test30() {
+	puts("=============");
+	char str[100] = { 0, };
+	char ch;
+	int i = 0;
+
+	printf("문자열을 입력하세요 (종료는 Enter): ");
+	while (1) {
+		ch = getchar();
+
+		if (ch == '\n')
+			break;
+		str[i] = ch;
+		i++;
+	}
+	str[i] = '\0';
+
+	printf("입 력 된   문 자 열: ");
+	puts(str);
+
+	return 0;
+}
 
