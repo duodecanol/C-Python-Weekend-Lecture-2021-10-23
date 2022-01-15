@@ -29,4 +29,15 @@ void main(void) {
 	test17();
 	test18();
 	test19();
+
+	// 2022-01-15
+	//test20();
+	test21();
+	test22();
+	//test23();
+	//test24();
+	//test25();
+	//test26(); // 소설쓰기
+	//test27();
+	test28();
 }

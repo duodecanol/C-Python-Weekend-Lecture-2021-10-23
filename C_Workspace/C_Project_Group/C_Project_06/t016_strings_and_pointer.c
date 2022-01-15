@@ -2,6 +2,7 @@
 #include "projectheader.h"
 #include <stdlib.h>
 
+
 int test16() {
 	puts("=============");
 
@@ -54,10 +55,12 @@ int test19() {
 	// https://stackoverflow.com/questions/2351544/is-array-name-a-constant-pointer-in-c
 	char* str2 = "Your String";
 
-	printf("%s\n", str1);
-	printf("%s\n", str2);
-	printf("%p\n", str2);
-	printf("%c\n", str2[0]);
+	printf("   str1 in array string: %s\n", str1);
+	printf("   str1[0] in stack memory: %p\n", str1);	
+			   
+	printf("   str2 in char pointer: %s\n", str2);
+	printf("   str2[0] in heap memory: %p\n", str2);
+	
 
 	// str1 = "Your String"; // 배열명에 다시 할당: Compile Error
 	// ** 배열 선언된 문자열의 전체 값을 바꾸는 것은 불가능하다.
@@ -83,7 +86,8 @@ int test19() {
 	*(str3 + 4) = 'o';
 	*(str3 + 5) = '\0';
 
-	printf("%s\n", str3);
+	printf("   str3: %s\n", str3);
+	printf("   str3[0] malloc in heap memory: %p\n", str3);	
 
 	// 이 경우에는 변경이 가능하다. 배열의 컨셉과 비슷하다고 생각하자.
 	*(str3 + 0) = 'X';
