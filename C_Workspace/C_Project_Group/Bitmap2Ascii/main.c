@@ -1,5 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "bitmapstruct.h"
 
 // https://dojang.io/mod/page/view.php?id=704
@@ -8,13 +10,16 @@
 // (비트맵 포맷은 픽셀 데이터의 가로 한 줄을 저장할 때 4의 배수 크기로 저장합니다)
 // CPU에서 4바이트 크기가 효율적이기 때문입니다.
 
+typedef unsigned char BYTE;
+
+
 int main() {
 	FILE* fpBmp; // Bitmap file filepointer
 	FILE* fpTxt; // Text file filepointer
 	BITMAPFILEHEADER fileHeader; // bitmap file header struct 
 	BITMAPINFOHEADER infoHeader; // bitmap info header struct
 
-	unsigned char* image; // Pixel data pointer
+	BYTE* image; // Pixel data pointer
 	int imgSize;		  // Pixel data size
 	int width, height;    // width, height of the bitmap image
 	int padding;		  // the remaining space's size in case where the width of the bitmap image is not 4-fold
@@ -33,7 +38,7 @@ int main() {
 	(2바이트 크기의 'BM'을 리틀 엔디언 방식으로 읽었으므로 'B'와 'M'이 뒤집혀서 'MB'가 됩니다). 
 	만약 이 값이 맞지 않으면 비트맵 파일이 아닙니다.
 	*/
-	fpBmp = fopen("C:\\Users\\hwal\\Pictures\\nekonohi-01a.bmp", "rb"); // Open bitmap file with read-only binary mode
+	fpBmp = fopen("images\\nekonohi-01a.bmp", "rb"); // Open bitmap file with read-only binary mode
 	if (fpBmp == NULL) {// If file opening fails,
 		puts("Failed to open file");
 		return 0;	   // Exit program
@@ -83,7 +88,12 @@ int main() {
 		imgSize = (width * PIXEL_SIZE + padding) * height;
 	}
 
-	image = malloc(imgSize);  // 픽셀 데이터의 크기만큼 동적 메모리 할당
+	image = malloc((size_t)imgSize);  // 픽셀 데이터의 크기만큼 동적 메모리 할당
+	if (image == NULL) { fputs("Memory error", stderr); exit(1); }
+
+	size_t imgSizeCheck = _msize(image);
+	printf("imgSizeCheck size: %lld\n", imgSizeCheck);
+
 	/* BLOCK 4
 	이제 비트맵 이미지의 픽셀 데이터를 읽습니다. 
 	24비트 비트맵 파일에서는 비트맵 정보 헤더 바로 다음에 픽셀 데이터가 있어서
@@ -91,12 +101,21 @@ int main() {
 	픽셀 데이터의 시작 위치로 이동시켰습니다.
 	*/
 
+	// Check bmp file size
+	fseek(fpBmp, 0, SEEK_END);
+	long size = ftell(fpBmp);
+	printf("fpBmp size: %ld\n", size);
+	rewind(fpBmp);
+
 	// move file pointer to the start position of the pixel data
 	fseek(fpBmp, fileHeader.bfOffBits, SEEK_SET);
 
 	// Read from file as much as the size of image. If reading fails, close FP and exit program.
-	if (fread(image, imgSize, 1, fpBmp) < 1) {
+	size_t freadRes = fread(image, 1, imgSize, fpBmp);
+	printf("freadRes: %lld\n", freadRes);
+	if (freadRes < 1) {
 		fclose(fpBmp);
+		free(image);
 		puts("Failed to read bitmap image.");
 		return 0;
 	}
