@@ -15,19 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="projectheader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="t001_understanding_of_function.c">
+    <ClCompile Include="t001_introducing_pointers.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="t004_various_types_of_functions.c">
+    <ClCompile Include="t005_assigning_values_by_func_ref.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="t005_basic_array.c">
+    <ClCompile Include="t008_array_and_pointer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="t010_advanced_array.c">
+    <ClCompile Include="t016_strings_and_pointer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="t020_strings_and_string_library.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

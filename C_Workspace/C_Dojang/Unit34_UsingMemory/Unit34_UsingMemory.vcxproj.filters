@@ -18,17 +18,13 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="t001_understanding_of_function.c">
+    <ClCompile Include="u3501_memory_allocation.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="t004_various_types_of_functions.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="t005_basic_array.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="t010_advanced_array.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="unitheader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

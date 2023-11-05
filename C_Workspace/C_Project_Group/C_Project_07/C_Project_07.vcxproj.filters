@@ -15,20 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="t001_variables_and_scope.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="t001_understanding_of_function.c">
+    <ClCompile Include="t003_func_call_types.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="t004_various_types_of_functions.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="t005_basic_array.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="t010_advanced_array.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="projectheader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

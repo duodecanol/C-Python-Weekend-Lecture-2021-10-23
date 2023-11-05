@@ -71,9 +71,7 @@ int test09() {
 int dynamicArray() {
 	// http://www.mathcs.emory.edu/~cheung/Courses/255/Syllabus/2-C-adv-data/dyn-array.html
 
-
 	int i;
-
 	double* p;    // We uses this reference variable to access
 				  // dynamically created array elements
 
@@ -101,8 +99,6 @@ int dynamicArray() {
 
 	free(p);      // Un-reserve the second array
 
-
 	return 0;
 }
 
-https://www.google.com/search?q=c+dynamic+array&newwindow=1&biw=1664&bih=969&sxsrf=AOaemvLd9sOB3SztEQaVzySfVz3v1m18Fg%3A1639204542305&ei=vka0YfDAEYfn2roPsLKewAE&oq=c+dynamic+&gs_lcp=Cgdnd3Mtd2l6EAMYADIECCMQJzIECCMQJzIFCAAQywEyBggAEAcQHjIGCAAQBxAeMgYIABAHEB4yBggAEAcQHjIFCAAQgAQyBggAEAcQHjIGCAAQBxAeOgcIIxCwAxAnOgkIABCwAxAHEB46CAgAEIAEELEDOgsIABCABBCxAxCDAToFCC4QgAQ6CwguEIAEEMcBEK8BOhEILhCABBCxAxCDARDHARDRAzoLCC4QgAQQxwEQowI6CwguEIAEEMcBENEDOgcIIxDqAhAnOg0ILhCABBDHARCjAhAKOg0ILhCABBDHARDRAxAKSgQIQRgBSgQIRhgAUMYRWJFGYMhRaANwAHgAgAGYAYgBqA2SAQQwLjEymAEAoAEBsAEKyAEEwAEB&sclient=gws-wiz
